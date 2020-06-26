@@ -33,9 +33,9 @@ function animateSlides() {
       * Fourth Param (optional) : -=x indicates that we faster the animation time by x second
     */
 
-    slideTimeline.fromTo(revealImg, { x: "0%" }, { x: "100%" });
+    slideTimeline.fromTo(revealImg, { opacity: 1 }, { opacity: 0 });
     slideTimeline.fromTo(img, { scale: 2 }, { scale: 1 }, "-=1");
-    slideTimeline.fromTo(revealText, { x: "0%" }, { x: "100%" }, "-=0.5");
+    slideTimeline.fromTo(revealText, { opacity: 1 }, { opacity: 0 }, "-=0.5");
 
     // Create Scene
     /*
