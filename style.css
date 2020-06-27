@@ -18,7 +18,7 @@ main {
 #logo {
   color: white;
   font-family: "Lobster", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .nav-header {
@@ -41,7 +41,7 @@ main {
 
 .line1,
 .line2 {
-  width: 3rem;
+  width: 2rem;
   height: 0.2rem;
   margin: 0.4rem;
   background: white;
@@ -282,14 +282,17 @@ body.hide {
 
 .parable-container-orange h1 {
   color: rgb(255, 139, 93);
+  font-family: "Abril Fatface";
 }
 
 .parable-container-yellow h1 {
   color: rgb(245, 225, 158);
+  font-family: "Abril Fatface";
 }
 
 .parable-container-blue h1 {
   color: rgb(86, 124, 228);
+  font-family: "Abril Fatface";
 }
 
 .parable-text p {
@@ -373,7 +376,7 @@ body.hide {
     text-align: center;
   }
   .explore {
-    width: 60%;
+    width: 42%;
     margin: auto;
   }
   .detail-slide {
@@ -382,7 +385,7 @@ body.hide {
   }
   .parable-text p {
     margin-bottom: 5rem;
-    padding: 0;
+    padding: 1.5rem;
   }
   .parable-text h1 {
     margin: 2rem 0rem;
