@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Website</title>
+    <title>Parables</title>
     <link
       href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap"
       rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <!-- * the component inside barba wrapper doesn't change when we transition into other page -->
   <body data-barba="wrapper">
     <header class="nav-header">
-      <h1><a href="./index.html" id="logo">days.</a></h1>
+      <h1><a href="./index.html" id="logo">parables.</a></h1>
       <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -21,82 +31,100 @@
     </header>
     <!-- * The component with data-barba-namespace will be re-rendered when transitioning to other pages -->
     <main data-barba="container" data-barba-namespace="home">
-      <section class="mountain slide">
+      <section class="the-lost-sheep slide">
         <div class="hero-img">
-          <img src="./img/forest.png" alt="forest image" />
-          <div class="reveal-img"></div>
+          <img src="./img/the-lost-sheep-cover.jpg" alt="forest image" />
+          <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
           <div class="title">
-            <h2>
-              Freedom at your <span class="mountain-span">fingertips.</span>
-            </h2>
+            <h2>The Lost <span class="parable-span-blue">Sheep.</span></h2>
             <div class="title-swipe t-swipe1"></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non
-            deleniti.
+            The Parable of the Lost Sheep is one of the parables of Jesus. It
+            appears in the Gospels of Matthew and Luke. It is about a shepherd
+            who leaves his flock of ninety-nine sheep in order to find the one
+            which is lost.
           </p>
-          <a href="./mountain/index.html" class="explore mountain-exp"
-            >Explore</a
+          <a
+            href="./the-lost-sheep/index.html"
+            class="explore the-lost-sheep-exp"
+            >Read More</a
           >
-          <div class="reveal-text"></div>
+          <!-- <div class="reveal-text"></div> -->
         </div>
       </section>
-      <section class="hike slide">
+      <section class="mustard-seed slide">
         <div class="hero-img">
-          <img src="./img/hike.png" alt="hike image" />
-          <div class="reveal-img"></div>
-        </div>
-        k
-        <div class="hero-desc">
-          <div class="title">
-            <h2>Freedom at your <span class="hike-span">fingertips.</span></h2>
-            <div class="title-swipe t-swipe2"></div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non
-            deleniti.
-          </p>
-          <a href="./hike/index.html" class="explore hike-exp">Explore</a>
-          <div class="reveal-text"></div>
-        </div>
-      </section>
-      <section class="fashion slide">
-        <div class="hero-img">
-          <img src="./img/fashion.png" alt="fashion image" />
-          <div class="reveal-img"></div>
+          <img src="./img/mustard-seed-cover.jpg" alt="mustard-seed image" />
+          <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
           <div class="title">
             <h2>
-              Freedom at your <span class="fashion-span">fingertips.</span>
+              The Mustard
+              <span class="parable-span-yellow">seed.</span>
+            </h2>
+            <div class="title-swipe t-swipe2"></div>
+          </div>
+          <p>
+            The Parable of the Mustard Seed is one of the shorter parables of
+            Jesus. It appears in Matthew, Mark, and Luke. In the Gospels of
+            Matthew and Luke, it is immediately followed by the Parable of the
+            Leaven, which shares this parable's theme of the Kingdom of Heaven
+            growing from small beginnings.
+          </p>
+          <a href="./mustard-seed/" class="explore mustard-seed-exp"
+            >Read More</a
+          >
+          <!-- <div class="reveal-text"></div> -->
+        </div>
+      </section>
+      <section class="fig-tree slide">
+        <div class="hero-img">
+          <img src="./img/fig-tree-cover.jpg" alt="fig-tree image" />
+          <!-- <div class="reveal-img"></div> -->
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              The Barren
+              <span class="parable-span-orange">Fig Tree</span>
             </h2>
             <div class="title-swipe t-swipe3"></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non
-            deleniti.
+            The Parable of the Barren Fig Tree is a parable of Jesus which
+            appears in Luke 13:6-9. It is about a fig tree which does not
+            produce fruit.
           </p>
-          <a href="./fashion/index.html" class="explore fashion-exp">Explore</a>
-          <div class="reveal-text"></div>
+          <a href="./fig-tree/index.html" class="explore fig-tree-exp"
+            >Read More</a
+          >
+          <!-- <div class="reveal-text"></div> -->
         </div>
       </section>
     </main>
     <nav class="nav-bar">
       <ul class="nav-links">
-        <h3>Twitter</h3>
-        <h3>Youtube</h3>
-        <h3>Instragram</h3>
+        <h3>
+          <a href="https://www.instagram.com/arnold.ardianto/">Instagram</a>
+        </h3>
+        <h3>
+          <a href="https://www.facebook.com/fonmagnus/">Facebook</a>
+        </h3>
+        <h3>
+          <a href="https://www.linkedin.com/in/arnold-ardianto-40184341/"
+            >LinkedIn</a
+          >
+        </h3>
       </ul>
       <div class="contact">
         <h2>Stay in touch.</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem
-          praesentium ea amet error quidem natus. Magnam explicabo sed tenetur?
+          Let's share our faith and getting more in love, more growing in faith
+          with Jesus together
         </p>
       </div>
     </nav>

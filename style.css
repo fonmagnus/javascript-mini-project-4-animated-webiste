@@ -17,7 +17,8 @@ main {
 
 #logo {
   color: white;
-  font-family: "Abril Fatface";
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
 }
 
 .nav-header {
@@ -32,6 +33,10 @@ main {
   padding: 2rem 0rem;
   z-index: 2;
   position: relative;
+}
+
+.fas {
+  color: black;
 }
 
 .line1,
@@ -78,15 +83,15 @@ main {
   object-fit: cover;
 }
 
-.fashion-span {
+.parable-span-orange {
   color: rgb(255, 139, 93);
 }
 
-.mountain-span {
+.parable-span-blue {
   color: rgb(86, 124, 228);
 }
 
-.hike-span {
+.parable-span-yellow {
   color: rgb(245, 225, 158);
 }
 
@@ -140,6 +145,11 @@ main {
 }
 
 .nav-links h3 {
+  padding: 2rem 0rem;
+}
+
+.nav-links h3 a {
+  color: black;
   padding: 2rem 0rem;
 }
 
@@ -233,15 +243,9 @@ body.hide {
 }
 
 /* Other pages */
-.fashion1,
-.fashion2,
-.fashion3,
-.mountain1,
-.mountain2,
-.mountain3,
-.hike1,
-.hike2,
-.hike3 {
+.parable-container-orange,
+.parable-container-yellow,
+.parable-container-blue {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -254,65 +258,47 @@ body.hide {
   position: relative;
 }
 
-.fashion-img,
-.mountain-img,
-.hike-img {
+.parable-img {
   height: 70vh;
   flex-basis: 30rem;
 }
 
-.fashion-text,
-.mountain-text,
-.hike-text {
+.parable-text {
   flex: 1;
   position: relative;
   flex-basis: 25rem;
 }
 
-.fashion-img img,
-.mountain-img img,
-.hike-img img {
+.parable-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.fashion-text h1,
-.mountain-text h1,
-.hike-text h1 {
+.parable-text h1 {
   font-size: 6rem;
   padding: 5rem 0rem;
 }
 
-.fashion1 h1,
-.mountain1 h1,
-.hike1 h1 {
+.parable-container-orange h1 {
   color: rgb(255, 139, 93);
 }
 
-.fashion2 h1,
-.mountain2 h1,
-.hike2 h1 {
+.parable-container-yellow h1 {
   color: rgb(245, 225, 158);
 }
 
-.fashion3 h1,
-.mountain3 h1,
-.hike3 h1 {
+.parable-container-blue h1 {
   color: rgb(86, 124, 228);
 }
 
-.fashion-text p,
-.mountain-text p,
-.hike-text p {
+.parable-text p {
   font-size: 2rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
 
-.fashion-nr,
-.mountain-nr,
-.hike-nr {
+.parable-nr {
   font-size: 15rem;
   position: absolute;
   left: 45%;
@@ -347,20 +333,14 @@ body.hide {
   .hero-img {
     height: 50vh;
   }
-  .fashion-text h1,
-  .mountain-text h1,
-  .hike-text h1 {
+  .parable-text h1 {
     font-size: 2rem;
     padding: 1rem 0rem;
   }
-  .fashion-text p,
-  .mountain-text p,
-  .hike-text p {
+  .parable-text p {
     font-size: 1.2rem;
   }
-  .fashion-img img,
-  .mountain-img img,
-  .hike-img img {
+  .parable-img img {
     height: 50vh;
     object-position: top;
   }
@@ -400,20 +380,14 @@ body.hide {
     width: 100%;
     text-align: center;
   }
-  .fashion-text p,
-  .mountain-text p,
-  .hike-text p {
+  .parable-text p {
     margin-bottom: 5rem;
     padding: 0;
   }
-  .fashion-text h1,
-  .mountain-text h1,
-  .hike-text h1 {
+  .parable-text h1 {
     margin: 2rem 0rem;
   }
-  .fashion-nr,
-  .mountain-nr,
-  .hike-nr {
+  .parable-nr {
     font-size: 8rem;
   }
   .nav-bar {

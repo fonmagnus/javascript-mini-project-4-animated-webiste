@@ -33,18 +33,18 @@ function animateSlides() {
       * Fourth Param (optional) : -=x indicates that we faster the animation time by x second
     */
 
-    slideTimeline.fromTo(
-      revealImg,
-      { opacity: 1, scale: 1, y: "0%" },
-      { opacity: 0, scale: 0, y: "100%" }
-    );
-    slideTimeline.fromTo(img, { scale: 2 }, { scale: 1 }, "-=1");
-    slideTimeline.fromTo(
-      revealText,
-      { opacity: 1, scale: 1, y: "0%" },
-      { opacity: 0, scale: 0, y: "100%" },
-      "-=1"
-    );
+    // slideTimeline.fromTo(
+    //   revealImg,
+    //   { opacity: 1, scale: 1, y: "0%" },
+    //   { opacity: 0, scale: 0, y: "100%" }
+    // );
+    slideTimeline.fromTo(img, { scale: 1.5 }, { scale: 1 }, "-=1");
+    // slideTimeline.fromTo(
+    //   revealText,
+    //   { opacity: 1, scale: 1, y: "0%" },
+    //   { opacity: 0, scale: 0, y: "100%" },
+    //   "-=1"
+    // );
 
     // Create Scene
     /*
@@ -84,13 +84,13 @@ function animateSlides() {
       * of fading out image is finished
     */
     let nextSlide = index === slides.length - 1 ? "end" : slides[index + 1];
-    pageTimeline.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
+    pageTimeline.fromTo(nextSlide, { y: "0%" }, { y: "20%" });
     pageTimeline.fromTo(
       slide,
       { opacity: 1, scale: 1 },
       { opacity: 0, scale: 0.5 }
     );
-    pageTimeline.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.5");
+    pageTimeline.fromTo(nextSlide, { y: "20%" }, { y: "0%" }, "-=0.5");
 
     // Create new scene
 
@@ -170,6 +170,12 @@ function navToggle(e) {
 }
 
 const logo = document.querySelector("#logo");
+logo.addEventListener("click", removeMouseActive);
+
+function removeMouseActive() {
+  mouse.classList.remove("nav-active");
+}
+
 barba.init({
   /*
     ? what is views array ?
@@ -192,7 +198,7 @@ barba.init({
       },
     },
     {
-      namespace: "mountain",
+      namespace: "the-lost-sheep",
       beforeEnter() {
         logo.href = "../index.html";
         detailAnimation();
@@ -203,7 +209,7 @@ barba.init({
       },
     },
     {
-      namespace: "hike",
+      namespace: "mustard-seed",
       beforeEnter() {
         logo.href = "../index.html";
         detailAnimation();
@@ -214,7 +220,7 @@ barba.init({
       },
     },
     {
-      namespace: "fashion",
+      namespace: "fig-tree",
       beforeEnter() {
         logo.href = "../index.html";
         detailAnimation();
@@ -303,5 +309,6 @@ function detailAnimation() {
 }
 
 burger.addEventListener("click", navToggle);
+burger.addEventListener("click", removeMouseActive);
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
