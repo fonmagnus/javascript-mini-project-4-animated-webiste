@@ -38,7 +38,7 @@ function animateSlides() {
     //   { opacity: 1, scale: 1, y: "0%" },
     //   { opacity: 0, scale: 0, y: "100%" }
     // );
-    slideTimeline.fromTo(img, { scale: 1.5 }, { scale: 1 }, "-=1");
+    slideTimeline.fromTo(img, { scale: 1.2 }, { scale: 1 }, "-=1");
     // slideTimeline.fromTo(
     //   revealText,
     //   { opacity: 1, scale: 1, y: "0%" },
@@ -59,7 +59,7 @@ function animateSlides() {
     */
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
-      triggerHook: 0.5,
+      triggerHook: 0,
       reverse: false,
     })
       .setTween(slideTimeline)
@@ -84,13 +84,13 @@ function animateSlides() {
       * of fading out image is finished
     */
     let nextSlide = index === slides.length - 1 ? "end" : slides[index + 1];
-    pageTimeline.fromTo(nextSlide, { y: "0%" }, { y: "20%" });
+    // pageTimeline.fromTo(nextSlide, { y: "0%" }, { y: "20%" });
     pageTimeline.fromTo(
       slide,
       { opacity: 1, scale: 1 },
       { opacity: 0, scale: 0.5 }
     );
-    pageTimeline.fromTo(nextSlide, { y: "20%" }, { y: "0%" }, "-=0.5");
+    // pageTimeline.fromTo(nextSlide, { y: "20%" }, { y: "0%" }, "-=0.5");
 
     // Create new scene
 
@@ -102,6 +102,7 @@ function animateSlides() {
     pageScene = new ScrollMagic.Scene({
       triggerElement: slide,
       triggerHook: 0,
+      offset: 150,
       duration: "100%",
     })
       // .addIndicators({
@@ -295,12 +296,13 @@ function detailAnimation() {
     let nextSlide = index === slides.length - 1 ? "end" : slides[index + 1];
     const nextImg = nextSlide.querySelector("img");
     slideTimeline.fromTo(slide, { opacity: 1 }, { opacity: 0 });
-    slideTimeline.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1.5");
+    slideTimeline.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=0.75");
 
     detailScene = new ScrollMagic.Scene({
       triggerElement: slide,
       duration: "100%",
       triggerHook: 0,
+      reverse: true,
     })
       .setPin(slide, { pushFollowers: false })
       .setTween(slideTimeline)
