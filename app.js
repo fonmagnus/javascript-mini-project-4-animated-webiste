@@ -60,7 +60,7 @@ function animateSlides() {
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
       triggerHook: 0,
-      reverse: false,
+      reverse: true,
     })
       .setTween(slideTimeline)
       // .addIndicators({
@@ -85,11 +85,7 @@ function animateSlides() {
     */
     let nextSlide = index === slides.length - 1 ? "end" : slides[index + 1];
     // pageTimeline.fromTo(nextSlide, { y: "0%" }, { y: "20%" });
-    pageTimeline.fromTo(
-      slide,
-      { opacity: 1, scale: 1 },
-      { opacity: 0, scale: 0.5 }
-    );
+    pageTimeline.fromTo(slide, { opacity: 1 }, { opacity: 0 });
     // pageTimeline.fromTo(nextSlide, { y: "20%" }, { y: "0%" }, "-=0.5");
 
     // Create new scene
