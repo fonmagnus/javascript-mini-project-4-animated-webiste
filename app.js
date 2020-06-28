@@ -271,6 +271,17 @@ barba.init({
         detailScene.destroy();
       },
     },
+    {
+      namespace: "talents",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
   ],
 
   /*  
