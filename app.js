@@ -243,6 +243,17 @@ barba.init({
       },
     },
     {
+      namespace: "unforgiving-servant",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
       namespace: "good-samaritan",
       beforeEnter() {
         logo.href = "../index.html";
