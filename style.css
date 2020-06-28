@@ -270,7 +270,7 @@ body.hide {
 }
 
 .parable-img img {
-  width: 100%;
+  width: 140%;
   height: 100%;
   object-fit: cover;
 }
@@ -330,6 +330,21 @@ body.hide {
 .swipe3 {
   background: rgb(255, 139, 93);
   z-index: 3;
+}
+
+.attribution,
+.attribution-url {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.attribution {
+  color: white;
+}
+
+.attribution-url {
+  color: rgb(219, 215, 215);
 }
 
 @media screen and (max-width: 1500px) {
