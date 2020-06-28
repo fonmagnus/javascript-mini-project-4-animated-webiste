@@ -33,7 +33,11 @@
     <main data-barba="container" data-barba-namespace="home">
       <section class="good-samaritan slide">
         <div class="hero-img">
-          <img src="./img/good-samaritan-cover.jpg" alt="forest image" />
+          <img
+            src="./img/good-samaritan-cover.jpg"
+            alt="forest image"
+            class="lozad"
+          />
           <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
@@ -63,7 +67,11 @@
       </section>
       <section class="the-sower slide">
         <div class="hero-img">
-          <img src="./img/the-sower-cover.jpg" alt="the-sower image" />
+          <img
+            src="./img/the-sower-cover.jpg"
+            alt="the-sower image"
+            class="lozad"
+          />
           <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
@@ -88,25 +96,31 @@
           <!-- <div class="reveal-text"></div> -->
         </div>
       </section>
-      <section class="fig-tree slide">
+
+      <section class="prodigal-son slide">
         <div class="hero-img">
-          <img src="./img/fig-tree-cover.jpg" alt="fig-tree image" />
+          <img
+            src="./img/prodigal-son-cover.jpg"
+            alt="prodigal-son image"
+            class="lozad"
+          />
           <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
           <div class="title">
             <h2>
-              The Barren
-              <span class="parable-span-orange">Fig Tree</span>
+              The Prodigal
+              <span class="parable-span-orange">Son</span>
             </h2>
             <div class="title-swipe t-swipe3"></div>
           </div>
           <p>
-            The Parable of the Barren Fig Tree is a parable of Jesus which
-            appears in Luke 13:6-9. It is about a fig tree which does not
-            produce fruit.
+            The Parable of the Prodigal Son (also known as the parable of the
+            Two Brothers, Lost Son, Loving Father, or of the Forgiving Father)
+            is one of the parables of Jesus in the Bible, appearing in Luke
+            15:11–32
           </p>
-          <a href="./fig-tree/index.html" class="explore fig-tree-exp"
+          <a href="./prodigal-son/index.html" class="explore prodigal-son-exp"
             >Read More</a
           >
           <!-- <div class="reveal-text"></div> -->
@@ -115,7 +129,11 @@
 
       <section class="the-lost-sheep slide">
         <div class="hero-img">
-          <img src="./img/the-lost-sheep-cover.jpg" alt="forest image" />
+          <img
+            src="./img/the-lost-sheep-cover.jpg"
+            alt="forest image"
+            class="lozad"
+          />
           <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
@@ -140,7 +158,11 @@
 
       <section class="mustard-seed slide">
         <div class="hero-img">
-          <img src="./img/mustard-seed-cover.jpg" alt="mustard-seed image" />
+          <img
+            src="./img/mustard-seed-cover.jpg"
+            alt="mustard-seed image"
+            class="lozad"
+          />
           <!-- <div class="reveal-img"></div> -->
         </div>
         <div class="hero-desc">
@@ -159,6 +181,35 @@
             growing from small beginnings.
           </p>
           <a href="./mustard-seed/index.html" class="explore mustard-seed-exp"
+            >Read More</a
+          >
+          <!-- <div class="reveal-text"></div> -->
+        </div>
+      </section>
+
+      <section class="fig-tree slide">
+        <div class="hero-img">
+          <img
+            src="./img/fig-tree-cover.jpg"
+            alt="fig-tree image"
+            class="lozad"
+          />
+          <!-- <div class="reveal-img"></div> -->
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              The Barren
+              <span class="parable-span-orange">Fig Tree</span>
+            </h2>
+            <div class="title-swipe t-swipe3"></div>
+          </div>
+          <p>
+            The Parable of the Barren Fig Tree is a parable of Jesus which
+            appears in Luke 13:6-9. It is about a fig tree which does not
+            produce fruit.
+          </p>
+          <a href="./fig-tree/index.html" class="explore fig-tree-exp"
             >Read More</a
           >
           <!-- <div class="reveal-text"></div> -->
@@ -190,11 +241,14 @@
     <div class="cursor">
       <span class="cursor-text"></span>
     </div>
-    <div class="swipe swipe1"></div>
+    <div class="swipe swipe1"></di<>
     <div class="swipe swipe2"></div>
     <div class="swipe swipe3"></div>
     <!-- barba : for page transition -->
     <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- for lazy loading -->
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <!-- scroll magic : controller using scroll movements -->
     <script

@@ -231,6 +231,39 @@ barba.init({
         detailScene.destroy();
       },
     },
+    {
+      namespace: "prodigal-son",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
+      namespace: "good-samaritan",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
+      namespace: "the-sower",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
   ],
 
   /*  
@@ -296,13 +329,13 @@ function detailAnimation() {
     let nextSlide = index === slides.length - 1 ? "end" : slides[index + 1];
     const nextImg = nextSlide.querySelector("img");
     slideTimeline.fromTo(slide, { opacity: 1 }, { opacity: 0 });
-    slideTimeline.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=0.75");
+    slideTimeline.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1.2");
 
     detailScene = new ScrollMagic.Scene({
       triggerElement: slide,
       duration: "100%",
       triggerHook: 0,
-      reverse: true,
+      offset: 100,
     })
       .setPin(slide, { pushFollowers: false })
       .setTween(slideTimeline)
@@ -314,3 +347,6 @@ burger.addEventListener("click", navToggle);
 burger.addEventListener("click", removeMouseActive);
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
+
+const observer = lozad();
+observer.observe();
